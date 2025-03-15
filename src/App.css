@@ -260,8 +260,8 @@ body {
 }
 
 .feature-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem !important;
+  color: var(--primary-color);
 }
 
 .feature-item h3 {
@@ -398,29 +398,29 @@ body {
 
 /* Icon Styles */
 .icon-wrapper {
-  font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
 .button-icon {
   margin-right: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
+  vertical-align: middle;
 }
 
 .meta-icon {
-  font-size: 2rem;
+  font-size: 2rem !important;
   color: var(--primary-color);
   margin-right: 0.5rem;
 }
 
 .social-icon {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   color: var(--text-color);
 }
 
 .whatsapp-icon {
-  font-size: 2rem;
+  font-size: 2rem !important;
   color: white;
 }
 
