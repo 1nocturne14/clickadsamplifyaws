@@ -1,6 +1,7 @@
 import React from 'react';
-import { IconContext } from 'react-icons';
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,22 +12,18 @@ export const Footer: React.FC = () => {
         <p className="copyright">
           © 2021 - {currentYear} ClickAds Marketing - Todos los derechos reservados
         </p>
-        <IconContext.Provider value={{ className: 'social-icon' }}>
-          <div className="social-icons">
-            <a href="https://www.facebook.com/clickadsagencia" target="_blank" rel="noopener noreferrer">
-              <FaFacebook aria-hidden="true" />
-            </a>
-            <a href="https://www.instagram.com/clickads_agencia/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram aria-hidden="true" />
-            </a>
-          </div>
-        </IconContext.Provider>
-      </div>
-      <IconContext.Provider value={{ className: 'whatsapp-icon' }}>
-        <div className="whatsapp-button">
-          <FaWhatsapp aria-hidden="true" />
+        <div className="social-icons">
+          <a href="https://www.facebook.com/clickadsagencia" target="_blank" rel="noopener noreferrer">
+            <FacebookIcon className="social-icon" />
+          </a>
+          <a href="https://www.instagram.com/clickads_agencia/" target="_blank" rel="noopener noreferrer">
+            <InstagramIcon className="social-icon" />
+          </a>
         </div>
-      </IconContext.Provider>
+      </div>
+      <div className="whatsapp-button">
+        <WhatsAppIcon className="whatsapp-icon" />
+      </div>
     </footer>
   );
 }; 
