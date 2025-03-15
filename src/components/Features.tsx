@@ -1,6 +1,5 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
-import * as Si from 'react-icons/si';
 import { FaPaintBrush, FaCode } from 'react-icons/fa';
 
 export const Features: React.FC = () => {
@@ -11,7 +10,7 @@ export const Features: React.FC = () => {
         <div className="features-grid">
           <div className="feature-item">
             <div className="icon-wrapper">
-              <Si.SiMeta aria-hidden="true" />
+              <span className="meta-text">Meta</span>
             </div>
             <h3>Publicidad paga en Meta</h3>
             <p>Maximiza tu presencia en redes sociales con campañas publicitarias estratégicas y efectivas que generan resultados medibles.</p>

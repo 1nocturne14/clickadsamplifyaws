@@ -433,3 +433,9 @@ body {
   background: var(--card-background);
   border-radius: 12px;
 }
+
+.meta-text {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
