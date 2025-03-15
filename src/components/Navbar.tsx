@@ -1,16 +1,29 @@
 import React from 'react';
 
 export const Navbar: React.FC = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
-      <div className="logo">Kranix</div>
+      <div className="logo">ClickAds</div>
       <div className="nav-links">
-        <a href="#process">Process</a>
-        <a href="#security">Security</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#faq">FAQ</a>
-        <button className="button-primary">Get Started</button>
+        <a href="#servicios" onClick={(e) => {
+          e.preventDefault();
+          scrollToSection('servicios');
+        }}>Servicios</a>
+        <a href="#precios" onClick={(e) => {
+          e.preventDefault();
+          scrollToSection('precios');
+        }}>Precios</a>
+        <a href="#contacto" onClick={(e) => {
+          e.preventDefault();
+          scrollToSection('contacto');
+        }}>Contacto</a>
       </div>
     </nav>
   );

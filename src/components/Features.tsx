@@ -1,39 +1,32 @@
 import React from 'react';
+import { SiMeta } from 'react-icons/si';
+import { FaPaintBrush, FaCode } from 'react-icons/fa';
 
 export const Features: React.FC = () => {
   return (
-    <section className="features" id="features">
-      <h2>We can help you with...</h2>
+    <section className="features" id="servicios">
+      <h2>Nuestros Servicios</h2>
       <div className="features-grid">
         <div className="feature-item">
-          <div className="feature-icon">✨</div>
-          <h3>On-demand requests</h3>
-          <p>Get your design needs fulfilled quickly and efficiently.</p>
+          <div className="feature-icon">
+            <SiMeta />
+          </div>
+          <h3>Publicidad paga en Meta</h3>
+          <p>Maximiza tu presencia en redes sociales con campañas publicitarias estratégicas y efectivas que generan resultados medibles.</p>
         </div>
         <div className="feature-item">
-          <div className="feature-icon">🎯</div>
-          <h3>Top-notch quality</h3>
-          <p>Premium designs that elevate your brand presence.</p>
+          <div className="feature-icon">
+            <FaPaintBrush />
+          </div>
+          <h3>Creación de contenido</h3>
+          <p>Desarrollamos contenido creativo y estratégico que conecta con tu audiencia y fortalece tu marca en el mundo digital.</p>
         </div>
         <div className="feature-item">
-          <div className="feature-icon">🔄</div>
-          <h3>Seamless workflow</h3>
-          <p>Smooth collaboration and revision process.</p>
-        </div>
-        <div className="feature-item">
-          <div className="feature-icon">🎨</div>
-          <h3>Creative expertise</h3>
-          <p>Access to skilled designers for your projects.</p>
-        </div>
-        <div className="feature-item">
-          <div className="feature-icon">⚡</div>
-          <h3>Fast turnaround</h3>
-          <p>Quick delivery without compromising quality.</p>
-        </div>
-        <div className="feature-item">
-          <div className="feature-icon">🌟</div>
-          <h3>Expert Network</h3>
-          <p>Connect with industry-leading professionals.</p>
+          <div className="feature-icon">
+            <FaCode />
+          </div>
+          <h3>Creación de páginas webs</h3>
+          <p>Diseñamos y desarrollamos sitios web modernos, responsivos y optimizados para convertir visitantes en clientes.</p>
         </div>
       </div>
     </section>

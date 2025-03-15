@@ -10,20 +10,20 @@ export const FAQ: React.FC = () => {
 
   const faqItems: FAQItem[] = [
     {
-      question: "How many types of requests can you handle?",
-      answer: "We handle all types of design requests, from web design to branding materials. Our team is versatile and experienced in various design disciplines."
+      question: "¿Existe algún contrato de permanencia?",
+      answer: "Puedes probar nuestro servicio durante el primer mes. Un día antes de que finalice tu plan, te compartimos el informe mensual y tendrás la opción de decidir si deseas continuar con nosotros realizando el pago de renovación. No hay contratos de permanencia ni obligación a largo plazo."
     },
     {
-      question: "What is your average response time?",
-      answer: "We typically respond to requests within 24-48 hours, depending on the complexity of the project and your subscription plan."
+      question: "¿Toman fotos de mis productos?",
+      answer: "No, sin embargo, todas las imágenes y videos que nos envíes serán editados por nuestro talentoso equipo de diseñadores. Además, si deseas un nivel de profesionalismo aún mayor, tenemos contacto directo con fotógrafos altamente capacitados que pueden brindarte sus servicios por un costo adicional."
     },
     {
-      question: "Do you provide source files?",
-      answer: "Yes, we provide source files for all completed designs. You'll have full access to the working files in various formats."
+      question: "¿Qué metodos de pago aceptan?",
+      answer: "Transferencia Bancolombia, Nequi, Criptomonedas"
     },
     {
-      question: "Can I cancel my subscription anytime?",
-      answer: "Yes, you can cancel your subscription at any time. There are no long-term contracts or cancellation fees."
+      question: "¿Cuanto demoran en entregar el contenido?",
+      answer: "Por lo general, nuestro tiempo de entrega varía entre 3 a 7 días, aunque esto puede depender del paquete que selecciones y de la cantidad de diseños incluidos en el mismo. Además, el tiempo de entrega también está sujeto a la prontitud con la que nos proporcionas el material necesario cuando sea requerido."
     }
   ];
 
@@ -33,7 +33,7 @@ export const FAQ: React.FC = () => {
 
   return (
     <section className="faq" id="faq">
-      <h2>FAQ's</h2>
+      <h2>Preguntas Frecuentes</h2>
       <div className="faq-container">
         {faqItems.map((item, index) => (
           <div 

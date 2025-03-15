@@ -1,22 +1,24 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
+import { SiMeta } from 'react-icons/si';
 
 export const Hero: React.FC = () => {
   return (
     <section className="hero">
       <h1>
-        Bringing Your<br />
-        Dream Into <span className="highlight">Reality</span>
+        Más Clientes, Más Ventas,<br />
+        <span className="highlight">Más Crecimiento</span>
       </h1>
-      <p>We help transform your dreams into stunning digital designs through beautiful, thoughtful websites.</p>
-      <button className="button-primary">Start a Project</button>
+      <p>Creamos contenido que conecta, campañas que convierten y páginas web que impactan. Si buscas que tu negocio crezca en digital sin desperdiciar presupuesto, estás en el lugar correcto.</p>
+      <button className="button-primary">
+        <FaWhatsapp className="icon" /> Contáctanos por WhatsApp
+      </button>
       <div className="trusted-brands">
-        <p>TRUSTED BY AMAZING BRANDS</p>
         <div className="brand-logos">
-          <span>Layers</span>
-          <span>Quotient</span>
-          <span>Circooles</span>
-          <span>Hourglass</span>
-          <span>Command+R</span>
+          <div className="meta-expert">
+            <SiMeta className="meta-icon" />
+            <span>Expertos en Meta</span>
+          </div>
         </div>
       </div>
     </section>
