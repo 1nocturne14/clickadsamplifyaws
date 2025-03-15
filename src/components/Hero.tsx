@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconContext } from 'react-icons';
 import { FaWhatsapp } from 'react-icons/fa';
 import { SiMeta } from 'react-icons/si';
 
@@ -11,12 +12,16 @@ export const Hero: React.FC = () => {
       </h1>
       <p>Creamos contenido que conecta, campañas que convierten y páginas web que impactan. Si buscas que tu negocio crezca en digital sin desperdiciar presupuesto, estás en el lugar correcto.</p>
       <button className="button-primary">
-        <FaWhatsapp className="icon" /> Contáctanos por WhatsApp
+        <IconContext.Provider value={{ className: 'button-icon' }}>
+          <FaWhatsapp aria-hidden="true" /> Contáctanos por WhatsApp
+        </IconContext.Provider>
       </button>
       <div className="trusted-brands">
         <div className="brand-logos">
           <div className="meta-expert">
-            <SiMeta className="meta-icon" />
+            <IconContext.Provider value={{ className: 'meta-icon' }}>
+              <SiMeta aria-hidden="true" />
+            </IconContext.Provider>
             <span>Expertos en Meta</span>
           </div>
         </div>

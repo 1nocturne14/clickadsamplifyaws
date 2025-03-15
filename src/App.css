@@ -105,7 +105,8 @@ body {
   font-size: 1.25rem;
   max-width: 600px;
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-color);
+  opacity: 0.8;
 }
 
 .trusted-brands {
@@ -269,7 +270,8 @@ body {
 }
 
 .feature-item p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-color);
+  opacity: 0.8;
 }
 
 /* FAQ Styles */
@@ -313,7 +315,8 @@ body {
 
 .faq-answer {
   margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-color);
+  opacity: 0.8;
 }
 
 /* Button Secondary Style */
@@ -391,4 +394,42 @@ body {
 
 .whatsapp-button:hover {
   transform: translateY(-5px);
+}
+
+/* Icon Styles */
+.icon-wrapper {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.button-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.meta-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.whatsapp-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.meta-expert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--card-background);
+  border-radius: 12px;
 }
