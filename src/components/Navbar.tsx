@@ -39,8 +39,8 @@ export const Navbar: React.FC = () => {
         <div className="navbar-content">
           <button 
             className="menu-button" 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            onClick={() => setIsMenuOpen(true)}
+            aria-label="Abrir menú"
           >
             <MenuIcon />
           </button>

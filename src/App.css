@@ -444,17 +444,27 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
   .navbar-content {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 0;
+    width: 100%;
   }
   
   .logo {
     grid-column: 2;
     justify-self: center;
+  }
+
+  .logo img {
+    height: 35px;
   }
   
   .menu-button {
@@ -469,29 +479,38 @@ body {
     cursor: pointer;
     width: 40px;
     height: 40px;
+    margin-left: 0.5rem;
   }
   
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%;
     bottom: 0;
-    width: 70%;
+    width: 80%;
+    max-width: 300px;
     background: white;
     padding: 5rem 1.5rem;
-    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    transition: right 0.3s ease;
+    transition: left 0.3s ease;
     z-index: 998;
+    overflow-y: auto;
   }
   
   .nav-links.active {
-    right: 0;
+    left: 0;
   }
   
+  .nav-links a {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
   .close-menu-button {
     position: absolute;
     top: 1rem;
@@ -518,25 +537,38 @@ body {
   
   .hero {
     padding-top: 100px;
+    width: 100%;
+    overflow-x: hidden;
   }
   
   .hero-content {
     padding: 2rem 1rem;
+    width: 100%;
+    max-width: 100%;
   }
   
   .hero h1 {
     font-size: 2rem;
     margin-bottom: 0;
+    width: 100%;
+    word-wrap: break-word;
   }
   
   .hero p {
     font-size: 1rem;
     margin: 0 auto;
     max-width: 100%;
+    padding: 0 1rem;
   }
   
   .meta-expert {
     margin-top: 0.5rem;
+    max-width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+  
+  .meta-expert span {
+    font-size: 1rem;
   }
 }
 
