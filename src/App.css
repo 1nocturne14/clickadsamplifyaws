@@ -439,3 +439,8 @@ body {
   color: var(--primary-color);
   font-size: 1.5rem;
 }
+
+.feature-text {
+  font-size: 2rem;
+  color: var(--primary-color);
+}

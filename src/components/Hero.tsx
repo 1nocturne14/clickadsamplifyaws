@@ -1,6 +1,4 @@
 import React from 'react';
-import { IconContext } from 'react-icons';
-import { FaWhatsapp } from 'react-icons/fa';
 
 export const Hero: React.FC = () => {
   return (
@@ -11,9 +9,7 @@ export const Hero: React.FC = () => {
       </h1>
       <p>Creamos contenido que conecta, campañas que convierten y páginas web que impactan. Si buscas que tu negocio crezca en digital sin desperdiciar presupuesto, estás en el lugar correcto.</p>
       <button className="button-primary">
-        <IconContext.Provider value={{ className: 'button-icon' }}>
-          <FaWhatsapp aria-hidden="true" /> Contáctanos por WhatsApp
-        </IconContext.Provider>
+        <span className="button-icon">💬</span> Contáctanos por WhatsApp
       </button>
       <div className="trusted-brands">
         <div className="brand-logos">
