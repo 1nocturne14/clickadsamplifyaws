@@ -16,6 +16,9 @@ function App() {
       <Features />
       <Pricing />
       <FAQ />
+      <footer>
+        <p>© 2024 ClickAds Marketing - Todos los derechos reservados</p>
+      </footer>
     </div>
   );
 }
