@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { FaWhatsapp } from 'react-icons/fa';
-import { SiMeta } from 'react-icons/si';
+import * as Si from 'react-icons/si';
 
 export const Hero: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
         <div className="brand-logos">
           <div className="meta-expert">
             <IconContext.Provider value={{ className: 'meta-icon' }}>
-              <SiMeta aria-hidden="true" />
+              <Si.SiMeta aria-hidden="true" />
             </IconContext.Provider>
             <span>Expertos en Meta</span>
           </div>
