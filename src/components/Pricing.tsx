@@ -23,9 +23,14 @@ export const Pricing: React.FC = () => {
             <li>Parrilla de contenido</li>
             <li>Mejoramos tu linea grafica y el entendimiento de tu marca</li>
           </ul>
-          <button className="button-primary">
+          <a 
+            href="https://wa.me/573053964080" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="button-primary"
+          >
             <WhatsAppIcon className="button-icon" /> Contratar
-          </button>
+          </a>
         </div>
         <div className="pricing-item">
           <div className="pricing-icon">
@@ -42,9 +47,14 @@ export const Pricing: React.FC = () => {
             <li>Creación de cuenta publicitaria en Meta</li>
             <li>El pago no incluye la inversión en Meta Ads</li>
           </ul>
-          <button className="button-primary">
+          <a 
+            href="https://wa.me/573053964080" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="button-primary"
+          >
             <WhatsAppIcon className="button-icon" /> Contratar
-          </button>
+          </a>
         </div>
         <div className="pricing-item">
           <div className="pricing-icon">
@@ -63,9 +73,14 @@ export const Pricing: React.FC = () => {
             <li>Velocidad de carga rápida</li>
             <li>Posicionamiento básico en Google (SEO)</li>
           </ul>
-          <button className="button-primary">
+          <a 
+            href="https://wa.me/573053964080" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="button-primary"
+          >
             <WhatsAppIcon className="button-icon" /> Contratar
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -77,7 +77,7 @@ export const Navbar: React.FC = () => {
         </div>
       </nav>
       <a 
-        href="https://wa.me/tunumero" 
+        href="https://wa.me/573053964080" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="whatsapp-float"

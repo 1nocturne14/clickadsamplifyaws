@@ -12,9 +12,14 @@ export const Hero: React.FC = () => {
           <span className="highlight">Más Crecimiento</span>
         </h1>
         <p>Creamos contenido que conecta, campañas que convierten y páginas web que impactan. Si buscas que tu negocio crezca en digital sin desperdiciar presupuesto, estás en el lugar correcto.</p>
-        <button className="button-primary">
+        <a 
+          href="https://wa.me/573053964080" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="button-primary"
+        >
           <WhatsAppIcon className="button-icon" /> Contáctanos por WhatsApp
-        </button>
+        </a>
         <div className="meta-expert">
           <FacebookIcon className="meta-icon" />
           <InstagramIcon className="meta-icon" />
